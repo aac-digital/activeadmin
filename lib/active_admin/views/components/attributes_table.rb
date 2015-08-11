@@ -102,7 +102,7 @@ module ActiveAdmin
       def single_record?
         @single_record ||= @collection.size == 1
       end
-      
+
       def is_array?(obj)
         obj.respond_to?(:each) && obj.respond_to?(:first) && !obj.is_a?(Hash)
       end
