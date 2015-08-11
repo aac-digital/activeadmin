@@ -24,7 +24,7 @@ module ActiveAdmin
         end
 
         def wrapper_html_options
-          { class: "filter-form-field filter-#{as}" }
+          { class: "filter-form-field filter-#{as.dasherize}" }
         end
 
         # Override the standard finder to accept a proc
