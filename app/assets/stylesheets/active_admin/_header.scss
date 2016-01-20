@@ -74,13 +74,13 @@ ul.tabs{
     display: none;
     list-style: none;
     min-width: 175px;
-    padding: 5px 0;
     z-index: $z-index-navbar;
+    padding-left: 5px;
 
     > li {
       > a {
         display: block;
-        padding: ($navbar-padding-vertical / 2) $navbar-padding-horizontal;
+        padding: $navbar-padding-vertical 0 $navbar-padding-vertical ($navbar-padding-vertical+5);
       }
 
       &.current a,
