@@ -1,8 +1,10 @@
 .main-navbar {
   background-color: $navbar-background-color;
-  display: table;
-  padding: 0 $horizontal-page-margin;
-  width: 100%;
+  z-index: 2001;
+  position: absolute;
+  left:0;
+  width: 220px;
+  height: 100%;
 
   a,
   a:link,
@@ -17,28 +19,31 @@
 
   h1,
   .tabs {
-    display: table-cell;
-    vertical-align: middle;
-    white-space: nowrap;
+    display: block;
   }
 
   h1 {
     color: $navbar-color;
     font-size: 1.3em;
+    padding: 10px 10px;
   }
+}
+
+ul.tabs{
+  padding:0;
 }
 
 .main-navigation,
 .main-utility-navigation {
   display: table-cell;
   margin: 0;
-  padding: 0 20px;
   width: 100%;
 
   // first level navigation items
   > li {
-    display: inline-block;
+    display: block;
     position: relative;
+    width:100%;
 
     &.current > a {
       background-color: $navbar-link-active-background-color;
@@ -55,7 +60,7 @@
     }
 
     > a {
-      display: inline-block;
+      display: block;
       padding: $navbar-padding-vertical $navbar-padding-horizontal;
       position: relative;
       transition: background-color 0.15s, color 0.15s;
@@ -90,6 +95,7 @@
 
 .main-utility-navigation {
   padding: 0;
-  text-align: right;
+  margin-top: 20px;
+  text-align: left;
   white-space: nowrap;
 }
