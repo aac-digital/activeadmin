@@ -1,7 +1,7 @@
 .main-navbar {
   background-color: $navbar-background-color;
   z-index: 2001;
-  position: absolute;
+  position: fixed;
   left:0;
   width: 220px;
   height: 100%;
